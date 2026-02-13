@@ -1,6 +1,6 @@
 /node_modules
 /dist
-/.parel-cache
+/.parcel-cache
 /.parcelrc
 /.env
 /.env.local
