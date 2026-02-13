@@ -202,3 +202,107 @@ export const restaurantList = [
         location:"Charminar"
     }
 ]
+
+export const swiggy = [
+  {
+    info: {
+      id: "651014",
+      name: "Pizza Hut",
+// https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/2/12/3ef15d1c-d2e9-4e59-9c72-51ec839b9cfd_651014.JPG
+
+      cloudinaryImageId:
+        "RX_THUMBNAIL/IMAGES/VENDOR/2026/2/12/3ef15d1c-d2e9-4e59-9c72-51ec839b9cfd_651014.JPG",
+      locality: "Mehdipatnam",
+      areaName: "Mehdipatnam",
+      costForTwo: "₹350 for two",
+      cuisines: ["Pizzas"],
+      avgRating: 4.4,
+      parentId: "721",
+      avgRatingString: "4.4",
+      totalRatingsString: "2.8K+",
+
+      sla: {
+        deliveryTime: 29,
+        lastMileTravel: 1.3,
+        serviceability: "SERVICEABLE",
+        slaString: "25-30 mins",
+        lastMileTravelString: "1.3 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+
+      availability: {
+        nextCloseTime: "2026-02-12 23:00:00",
+        opened: true,
+      },
+
+      badges: {
+        imageBadges: [
+          {
+            imageId: "Rxawards/_CATEGORY-Pizza.png",
+            description: "Delivery!",
+          },
+        ],
+      },
+
+      isOpen: true,
+      type: "F",
+
+      badgesV2: {
+        entityBadges: {
+          imageBased: {
+            badgeObject: [
+              {
+                attributes: {
+                  description: "Delivery!",
+                  imageId: "Rxawards/_CATEGORY-Pizza.png",
+                },
+              },
+            ],
+          },
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+
+      aggregatedDiscountInfoV3: {
+        header: "ITEMS",
+        subHeader: "AT ₹59",
+      },
+
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          lottie: {},
+          video: {},
+        },
+      },
+
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+
+      externalRatings: {
+        aggregatedRating: {
+          rating: "4.6",
+          ratingCount: "577",
+        },
+        source: "GOOGLE",
+        sourceIconImageId:
+          "v1704440323/google_ratings/rating_google_tag",
+      },
+
+      ratingsDisplayPreference:
+        "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    },
+
+    analytics: {
+      context: "seo-data-3bc7480b-09f9-4def-808c-6c48e1e1d72d",
+    },
+
+    cta: {
+      link:
+        "https://www.swiggy.com/city/hyderabad/pizza-hut-mehdipatnam-rest651014",
+      type: "WEBLINK",
+    },
+  },
+];

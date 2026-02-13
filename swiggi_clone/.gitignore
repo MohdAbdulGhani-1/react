@@ -2,3 +2,5 @@
 /dist
 /.parel-cache
 /.parcelrc
+/.env
+/.env.local

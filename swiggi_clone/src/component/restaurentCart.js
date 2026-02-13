@@ -3,12 +3,12 @@ function RestaurantCard(props){
     return(
         
         <div className="restaurentCard">
-            <img src={props.restaurantList.image} alt={props.restaurantList.resName} className="cardImg"/>
-            <h2>{props.restaurantList.resName}</h2>
-            <h3>{props.restaurantList.avgRating}star. {props.restaurantList.deliveryTime}mins</h3><br/>
-            <h4>{props.restaurantList.costForTwo}</h4>
-            <p>{props.restaurantList.cuisine.join(", ")}</p>
-            <p>{props.restaurantList.location}</p>
+            <img src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${props.restaurantList.info.cloudinaryImageId}`} alt={props.restaurantList.info.name} className="cardImg"/>
+            <h2>{props.restaurantList.info.name}</h2>
+            <h3>{props.restaurantList.info.avgRating}star. {props.restaurantList.info.sla.deliveryTime}mins</h3><br/>
+            <h4>{props.restaurantList.info.costForTwo}</h4>
+            <p>{props.restaurantList.info.cuisines.join(", ")}</p>
+            <p>{props.restaurantList.info.locality}</p>
         </div>
         
     );
