@@ -9,7 +9,7 @@ function Body(){
 
     useEffect(() => {
         console.log('data called');
-        getCatFact("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=17.3767325&lng=78.4296535&carousel=true&third_party_vendor=1");
+        getCatFact("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.3472352&lng=78.5083082&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
     },[])
 
     async function getCatFact(url) {

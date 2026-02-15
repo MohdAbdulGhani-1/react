@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header(){
     return (<nav id="navbar">
         <a  href="/" id="logo" >Swiggi Clone</a>
@@ -7,9 +9,10 @@ function Header(){
                 <button className="nav-items" id="btn" type="submit">Search</button>
             </div>
             <ul id="nav-list" >
-                <li >Home</li>
-                <li >Restaurants</li>
-                <li >Offers</li>
+                <li className="navLink" ><Link to="/" className="Link" >Home</Link></li>
+                <li className="navLink" ><Link to="/About" className="Link" >About</Link></li>
+                <li className="navLink" ><Link to="/Contact" className="Link" >Contact</Link></li>
+                <li className="navLink" ><Link to="/Cart" className="Link" >Cart</Link></li>
             </ul>
     </nav>);
 }
