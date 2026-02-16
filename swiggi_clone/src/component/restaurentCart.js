@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 function RestaurantCard(props){
     return(
-        
+        <Link to={`/restaurants/${props.restaurantList.info.id}`} className="restaurant-link" >
         <div className="restaurentCard">
             <img src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${props.restaurantList.info.cloudinaryImageId}`} alt={props.restaurantList.info.name} className="cardImg"/>
             <h2>{props.restaurantList.info.name}</h2>
@@ -10,7 +11,7 @@ function RestaurantCard(props){
             <p>{props.restaurantList.info.cuisines.join(", ")}</p>
             <p>{props.restaurantList.info.locality}</p>
         </div>
-        
+        </Link>
     );
 }
 export default RestaurantCard;

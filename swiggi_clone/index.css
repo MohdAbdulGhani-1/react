@@ -157,6 +157,7 @@ body{
     background-color: white;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 .restaurentCard:hover{
     box-shadow: 0px 6px 16px rgba(0,0,0,0.12);
@@ -243,4 +244,100 @@ body{
 .Link:hover{
     color: var(--primary-color);
     transition: all 0.3s ease-in-out;
+}
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} */
+/* 
+body {
+    background-color: #f4f6f9;
+} */
+
+.about {
+    margin-top: 30px;
+    padding: 100px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+} 
+
+.mission {
+    background-color: #ff5200;
+    font-style: italic;
+    color: rgb(233, 46, 46);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px;
+}
+
+.about-image {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.about-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    color: #555;
+}
+
+.about-iframe {
+    flex: 1;
+    text-align: center;
+}
+
+.about-iframe iframe {
+    border-radius: 10px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+}
+.restaurant-link {
+    text-decoration: none;
+    color: var(--secondary-color);
 }

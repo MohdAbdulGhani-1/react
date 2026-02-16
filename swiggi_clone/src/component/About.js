@@ -16,15 +16,17 @@ const About = () => {
                     </p>
 
                     <h2>Our Mission</h2>
-                    <p>
-                        Our mission is to deliver efficient, scalable,
-                        and beautiful digital products.
+                    <p className="mission" style={{color: "white"}}>
+                        Our mission is to elevate the quality of life for the urban consumer with unparalleled convenience. Convenience is what makes us tick. It's what makes us get out of bed and say, "Let's do this."
                     </p>
                 </div>
 
-                <div className="about-image">
-                    <img src="https://via.placeholder.com/300" alt="About Image"/>
+                <div className="about-iframe">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/fLz2fgU_x1Q" title="About Us Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
+            </div>
+            <div className="about-image" style={{ height: "200px", width: "100%", objectFit: "cover" }}>
+                    <img src="https://careers.swiggy.com/assets/img/Swiggy-Journey.jpg" alt="About Us Image" />
             </div>
         </div>
     </section>
