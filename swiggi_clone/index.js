@@ -12,7 +12,7 @@ import RestaurantMenu from "./src/component/RestaurantMenu";
 import ErrorPage from "./src/component/ErrorPage";
 import {lazy, Suspense} from "react";
 
-const Grocery = lazy(()=> import("./src/components/Grocery"));
+const Grocery = lazy(()=> import("./src/component/Grocery"));
 
 const appRouter = createBrowserRouter([
     {

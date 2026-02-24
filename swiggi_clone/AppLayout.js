@@ -2,9 +2,9 @@ import Header from "./src/component/header";
 import Body from "./src/component/body";
 import Footer from "./src/component/footer";
 import { Outlet } from "react-router-dom";
-import UserContext from "./utils/UserContext";
+import UserContext from "./src/utils/userContext";
 import { useEffect, useState } from "react";
-import HotelListContext from "./utils/HotelListContext";
+import HotelListContext from "./src/utils/HotelListContext";
 
 
 function AppLayout(){
