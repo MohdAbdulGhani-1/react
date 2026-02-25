@@ -10,15 +10,7 @@ const MenuItems = ({menuItem, dummyData}) => {
                 <p className="menu-item-description">{menuItem?.description}</p>
             </div>
             <div>
-                {menuItem?.imageId ? (
-                    <img 
-                        className="menu-item-image"
-                        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_138/${menuItem?.imageId}`} 
-                        alt={menuItem?.name} 
-                    />
-                ) : (
-                    <div className="menu-item-image no-image">No Image</div>
-                )}
+                <img className="menu-item-image" src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_138/${menuItem?.imageId}`} alt={menuItem?.name} />
             </div>
         </div>
     )

@@ -6,6 +6,35 @@
     --light-gray: #f5f5f5;
     --border-color: #e8e8e8;
 }
+
+/* light/dark vars only – no persistence */
+html.dark {
+    --light-gray: #121212;
+    --secondary-color: #5e5c5c;
+    --border-color: #919191;
+}
+
+html.dark body {
+    background-color: var(--light-gray);
+    color: var(--secondary-color);
+}
+
+html.dark .restaurentCard {
+    background-color: #2a2a2a; 
+}
+html.dark .restaurentCard h2,
+html.dark .restaurentCard h3,
+html.dark .restaurentCard h4,
+html.dark .restaurentCard p {
+    color: #e0e0e0; 
+}
+html.dark .restaurant-menu-info h1 {
+    color: #e0e0e0; 
+}
+html.dark .restaurant-menu-info-rating,
+html.dark .restaurant-menu-info-cuisines {
+    color: #e0e0e0; 
+ }
 #idBtn{
     display: flex;
     position: fixed;

@@ -13,17 +13,27 @@ function AppLayout(){
 
     const [username, setUsername] = useState();
     const [email, setEmail] = useState();
+    const [theme, setTheme] = useState("light");
+
+    // apply class whenever theme changes
+    useEffect(() => {
+        document.documentElement.className = theme;
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(t => (t === "light" ? "dark" : "light"));
+    };
 
     useEffect(() => {
         const randomTrue = Math.random() < 0.5;
         if (!randomTrue) {
-        setUsername("guest");
-        setEmail("guestEmail.com");
-        return;
+            setUsername("guest");
+            setEmail("guestEmail.com");
+            return;
         }
         const loggedInUser = {
-        name: "mohd abdul Ghani",
-        email: "abdulghani@gmail.com",
+            name: "mohd abdul Ghani",
+            email: "abdulghani@gmail.com",
         };
         setUsername(loggedInUser.name);
         setEmail(loggedInUser.email);
@@ -32,7 +42,7 @@ function AppLayout(){
         <div>
             <UserContext.Provider value={{ name: username, email: email }}>
                 <HotelListContext.Provider value={{hotelList, setHotelList, filteredHotelList, setFilteredHotelList}}>
-                <Header />
+                <Header theme={theme} toggleTheme={toggleTheme} />
                 <Outlet />
                 <Footer />
                 </HotelListContext.Provider>

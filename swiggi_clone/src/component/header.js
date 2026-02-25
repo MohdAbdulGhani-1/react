@@ -4,7 +4,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/userContext";
 import HotelListContext from "../utils/HotelListContext";
 
-function Header(){
+function Header({ theme, toggleTheme }){
     const isOnline = useOnlineStatus();
     const [input, setInput] = useState("");
     const {name} = useContext(UserContext);
@@ -39,6 +39,14 @@ function Header(){
                 <li className="navLink" ><Link to="/grocery" className="Link" >Grocery</Link></li>
                 <li className="navLink" >{name}</li>
                 <li className="navLink" >{filteredHotelList.length}</li>
+                <li className="navLink">
+                    <button
+                        onClick={toggleTheme}
+                        style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+                    >
+                        {theme === 'light' ? '🌙' : '☀️'}
+                    </button>
+                </li>
             </ul>
     </nav>);
 }
